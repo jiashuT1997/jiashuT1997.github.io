@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div#blackboard {
+            border-style: dotted;
+            width: 500px;
+            height: 700px;
+            background-color: cornflowerblue;
+            font-family: 'Courier New', Courier, monospace;
+            color: firebrick;
+            border-color: midnightblue;
+            border-width: 5px;
+            font-size: 43px;
+            margin: 0px auto 0px auto;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: teal;
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        脚本实现算术示例
+    </h1>
+    <div id="b">
+        <div id="blackboard">
+
+        </div>
+    </div>
+    <script>
+        var table = 3;
+        var operator = 'addition';
+        var i = 1;
+        var msg = '';
+        if (operator == 'addition1') {
+            while (i < 15) {
+                msg += i + '+' + table + '=' + (i + table) + '<br/>';
+                i++;
+            }
+
+        } else {
+            while (i < 15) {
+                msg += i + 'x' + table + '=' + (i * table) + '<br/>';
+                i++;
+            }
+
+        }
+
+        var el = document.getElementById('blackboard');
+        el.innerHTML = msg;
+    </script>
+
+</body>
+
+</html>
