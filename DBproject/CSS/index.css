@@ -1,0 +1,133 @@
+@import "reset.css";
+@import "common.css";
+
+/* 统一样式 */
+button{
+    cursor: pointer;
+    padding: 0;
+}
+/* 统一样式结束 */
+
+
+
+
+/* 该页面通用样式 */
+.cont{
+    width: 950px;
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.header .search{
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    margin-left: 20px;
+    position: relative;
+}
+
+.header .search .txt{
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+
+.header .search .txt::placeholder{
+    color: gray;
+}
+
+.header .search button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+    color: c3c3c3;
+}
+/* 通用样式结束 */
+
+
+
+
+
+
+/* 页面头部样式 */
+
+.header{
+    height: 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+}
+
+.header .logo, .header .menu, .header .search{
+    height:30px;
+   
+}
+
+.header .logo a{
+    width: 154px;
+    height: 30px;
+    display: block;
+    background: url("../image/logo.png") no-repeat left top /100%;
+}
+
+.header .logo a span{
+    display: none;
+}
+
+.header .menu{
+    margin-top: 6px;
+}
+
+.header .menu a{
+    background: url("../image/nav.png") no-repeat left top /463px 20px;
+    width: 40px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 17px;
+}
+
+
+.header .menu .menu-read{
+    background-position: 0 0;
+}
+.header .menu .menu-movie{
+    background-position: -60px 0;
+}
+.header .menu .menu-music{
+    background-position: -120px 0;
+}
+.header .menu .menu-group{
+    background-position: -180px 0;
+}
+.header .menu .menu-city{
+    background-position: -240px 0;
+}
+.header .menu .menu-fm{
+    background-position: -300px 0;
+}
+.header .menu .menu-time{
+    background-position: -360px 0;
+}
+.header .menu .menu-doupin{
+    background-position: -420px 0;
+}
+/* 页头结束 */

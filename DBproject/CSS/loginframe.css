@@ -1,0 +1,78 @@
+@import "reset.css";
+@import "common.css";
+
+/* 统一设置超链接 */
+a{
+    color: lawngreen;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    height: 34px;
+    text-indent: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* 更多的缩进 */
+input[type="text"].more-text-indent{
+    padding-left: 50px;
+}
+
+.cont{
+    width: 300px;
+    height: 300px;
+    line-height:2;
+    padding: 10px;
+    padding-top: 30px;
+    color: #9b9b9b;
+
+}
+
+.cont .login .switch-menu{
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+}
+
+.cont .login .switch-menu span{
+    width: 150px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cont .login .switch-menu span.selected{
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #494949;
+}
+
+.cont .login .form .form-item{
+    margin: 10px 0;
+    position: relative;
+}
+
+.cont .login .form .form-item .txt{
+    font-size: 12px;
+
+}
+
+.cont .login .form .form-item .country-code{
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    left: 0;
+    top: 4.8px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    border-right:1px solid #e4e6e5;
+    cursor: pointer;
+
+}
+
